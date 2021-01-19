@@ -1,7 +1,5 @@
-import helper
+import requests
+import pprint
 
-def render():
-    print(helper.greeting('Logan', 'Anderson'))
-    
-
-render()
+r = requests.get("https://api.dailysmarty.com/posts")
+r.json
