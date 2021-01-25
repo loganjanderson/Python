@@ -1,11 +1,13 @@
-class Invoice:
+# class Website:
+#     def __init__(self, title):
+#         self.title = title
 
-    def __init__(self, client, total):
-        self.client = client
-        self.total = total
+# ws = Website('My title')
 
-    def formatter(self):
-        return f'{self.client} owes: {self.total}'
+# print(ws.__dict__)
 
-google = Invoice('Google', 100)
-print(google.formatter())
+class DifferentWebsite:
+    title = 'My Class Title'
+
+dw = DifferentWebsite()
+print(dw.title)
